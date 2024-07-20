@@ -1,0 +1,4 @@
+# Unix Archive files, Please see the "closed" branch to see the archive files
+*.a
+
+build/
