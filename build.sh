@@ -25,7 +25,10 @@ function go-tool-link-pkg() {
   go tool link -o $out -L $(realpath .) $(realpath .)/$importpath.a
 }
 
-go-tool-compile-pkg github.com/otaxhu/closed_src/closed_src
+# Doesn't need to compile since the object file is already present
+#
+# go-tool-compile-pkg github.com/otaxhu/closed_src/closed_src
+
 go-tool-compile-pkg github.com/otaxhu/closed_src/interfaces
 go-tool-compile-main github.com/otaxhu/closed_src/cmd
 go-tool-link-pkg github.com/otaxhu/closed_src/cmd build/main

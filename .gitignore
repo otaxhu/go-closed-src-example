@@ -1,4 +1,7 @@
 # Unix Archive files, Please see the "closed" branch to see the archive files
 *.a
 
+# Preserving closed_src.a
+!closed_src.a
+
 build/
